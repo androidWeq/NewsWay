@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/style_red"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/dimen_80_dp">
+        <ImageView
+            android:id="@+id/mine_news_activity_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:src="@drawable/left_arrow"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="@dimen/dimen_80_dp">
+
+            <RadioGroup
+                android:id="@+id/mine_news_activity_radiogroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/mine_news_activity_radiobtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="回复"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_l"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/mine_news_activity_radiobtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="弹幕"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_l"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/mine_news_activity_radiobtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="回复"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_l"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/mine_news_activity_huadong"
+                android:layout_width="@dimen/dimen_80_dp"
+                android:layout_height="@dimen/dimen_5_dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/orange"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/mine_news_activity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

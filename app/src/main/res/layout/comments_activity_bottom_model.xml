@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/dimen_40_dp"
+android:background="@color/white"
+android:gravity="center_vertical">
+
+
+<CheckBox
+    android:id="@+id/ontheway_relistview_item_checkbox"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:button="@null"
+    android:text="我想去 16"
+    android:checked="false"
+    android:gravity="center"
+    android:textColor="@color/checkbox_textcolor"
+    android:layout_marginLeft="@dimen/dimen_5_dp"
+    android:drawableLeft="@drawable/checkbox_select"/>
+
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a6z"/>
+    <TextView
+        android:id="@+id/ontheway_relistview_item_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论 3"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a6y"/>
+    <TextView
+        android:id="@+id/ontheway_relistview_item_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:text="分享 3"
+        android:gravity="center"/>
+</LinearLayout>
+
+</LinearLayout>

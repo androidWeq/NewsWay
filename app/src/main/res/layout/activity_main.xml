@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/main_fragHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.67" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_raidoGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_rb1"
+            style="@style/main_radioButton_style"
+            android:checked="true"
+            android:drawableTop="@drawable/home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/main_rb2"
+            style="@style/main_radioButton_style"
+            android:drawableTop="@drawable/dingyue"
+            android:text="订阅" />
+
+        <RadioButton
+            android:id="@+id/main_rb3"
+            style="@style/main_radioButton_style"
+            android:drawableTop="@drawable/ontheway"
+            android:text="在路上" />
+
+        <RadioButton
+            android:id="@+id/main_rb4"
+            style="@style/main_radioButton_style"
+            android:drawableTop="@drawable/chaxun"
+            android:text="地铁查询" />
+
+        <RadioButton
+            android:id="@+id/main_rb5"
+            style="@style/main_radioButton_style"
+            android:drawableTop="@drawable/mine"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

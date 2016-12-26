@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:gravity="center_vertical"
+        android:background="@color/style_red">
+
+        <ImageView
+            android:id="@+id/integral_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_xl"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        android:paddingTop="@dimen/dimen_8_dp"
+        android:paddingBottom="@dimen/dimen_8_dp"
+        android:paddingLeft="@dimen/dimen_4_dp"
+        android:paddingRight="@dimen/dimen_4_dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dimen_10_dp"
+            android:paddingBottom="@dimen/dimen_10_dp"
+            android:paddingLeft="@dimen/dimen_20_dp"
+            android:paddingRight="@dimen/dimen_20_dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_xl"
+                android:textColor="@color/black"
+                android:text="正文字号"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中"
+                android:id="@+id/integral_setting_textsize"
+                android:textColor="@color/darkgray"
+                android:drawablePadding="@dimen/dimen_3_dp"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/a6j"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_10_dp"
+            android:paddingBottom="@dimen/dimen_10_dp"
+            android:paddingLeft="@dimen/dimen_20_dp"
+            android:paddingRight="@dimen/dimen_20_dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_xl"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="弹幕开关"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/integral_setting_openDanmaku"
+                android:layout_width="54dp"
+                toggle:tbOnColor="@color/red"
+                toggle:tbOffColor="@color/white"
+                toggle:tbSpotColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_10_dp"
+            android:paddingBottom="@dimen/dimen_10_dp"
+            android:paddingLeft="@dimen/dimen_20_dp"
+            android:paddingRight="@dimen/dimen_20_dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_xl"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="非wifi下小图模式"/>
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/integral_setting_wifiImg"
+                android:layout_width="54dp"
+                toggle:tbOnColor="@color/red"
+                toggle:tbOffColor="@color/white"
+                toggle:tbSpotColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/integral_setting_clean"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_10_dp"
+            android:paddingBottom="@dimen/dimen_10_dp"
+            android:paddingLeft="@dimen/dimen_20_dp"
+            android:paddingRight="@dimen/dimen_20_dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_xl"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="清理垃圾"/>
+
+            <TextView
+                android:id="@+id/integral_setting_garbageSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15.70MB"
+                android:textColor="@color/darkgray"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/integral_setting_aboutUs"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:paddingTop="@dimen/dimen_10_dp"
+            android:paddingBottom="@dimen/dimen_10_dp"
+            android:paddingLeft="@dimen/dimen_20_dp"
+            android:paddingRight="@dimen/dimen_20_dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_xl"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="关于我们"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a6j"
+                android:layout_centerVertical="true"
+                android:textColor="@color/darkgray"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:clickable="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/style_red"
+        android:text="退出"
+        android:id="@+id/integral_setting_tuichu"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_m"
+        android:paddingTop="@dimen/dimen_10_dp"
+        android:paddingBottom="@dimen/dimen_10_dp"/>
+
+
+</LinearLayout>

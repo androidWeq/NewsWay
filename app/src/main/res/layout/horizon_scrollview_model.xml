@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/home_top" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_top_hengxian"
+            android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/transparent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_column"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/channel_scrollview_height"
+                android:layout_weight="1.0" >
+
+                <com.youjia.newsway.review.ColumnHorizontalScrollView
+                    android:id="@+id/mColumnHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/channel_scrollview_height"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/mRadioGroup_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/channel_scrollview_height"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/radiogroup_scrollview_padding_left"
+                        android:paddingRight="@dimen/radiogroup_scrollview_padding_right" />
+                </com.youjia.newsway.review.ColumnHorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/shade_left"
+                    android:layout_width="@dimen/shadeleft_scrollview_width"
+                    android:layout_height="@dimen/shadeleft_scrollview_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/channel_leftblock"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/shade_right"
+                    android:layout_width="@dimen/shaderight_scrollview_width"
+                    android:layout_height="@dimen/shaderight_scrollview_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/channel_rightblock"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_more_columns"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/channel_scrollview_height" >
+
+                <ImageView
+                    android:id="@+id/button_more_columns"
+                    android:layout_width="@dimen/more_button_size"
+                    android:layout_height="@dimen/more_button_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/channel_glide_day_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayish"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65_dp"
+        android:background="@drawable/inquire_top"
+        android:paddingBottom="@dimen/dimen_8_dp"
+        android:paddingLeft="@dimen/dimen_20_dp"
+        android:paddingRight="@dimen/dimen_20_dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/weather_chajian" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40_dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/turquoise">
+        <ImageView
+            android:id="@+id/city_subway_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/city_subway_detail_lineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:text="北京地铁 - 四号线"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:paddingLeft="@dimen/dimen_20_dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开往:   "
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_xl"/>
+        <TextView
+            android:id="@+id/city_subway_detail_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大厂"
+            android:textSize="@dimen/textsize_xl"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:paddingLeft="@dimen/dimen_20_dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首班车:   "
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/textsize_l"/>
+        <TextView
+            android:id="@+id/city_subway_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:35-20:40"
+            android:textSize="@dimen/textsize_l"
+            android:textColor="@color/darkgray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:paddingLeft="@dimen/dimen_20_dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全程票价 (元):   "
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/textsize_l"/>
+        <TextView
+            android:id="@+id/city_subway_detail_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10公里以为票价2元, 每增加5公里内票价加1元."
+            android:maxLines="2"
+            android:textSize="@dimen/textsize_l"
+            android:textColor="@color/darkgray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150_dp"
+        android:background="@color/grayish">
+        <com.youjia.newsway.review.BusLineView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_150_dp"
+            android:id="@+id/city_subway_detail_bus_line"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_1_dp"
+            android:layout_weight="1"
+            android:background="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周边服务"
+            android:textSize="@dimen/textsize_l"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_1_dp"
+            android:background="@color/gray"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/city_subway_detail_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4">
+
+    </GridView>
+
+
+</LinearLayout>

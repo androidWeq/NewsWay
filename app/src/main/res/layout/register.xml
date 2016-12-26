@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/c23_register_bg">
+
+    <ImageView
+        android:id="@+id/register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_20_dp"
+        android:src="@drawable/c23_back"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/c23_log"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小明地铁"
+        android:layout_marginTop="@dimen/dimen_2_dp"
+        android:textSize="@dimen/textsize_xl"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#BAB5AF"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_50_dp"
+        android:layout_marginRight="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_30_dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_50_dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c23_phone"/>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/register_phone"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:hint="请输入您的手机号码"
+            android:textSize="@dimen/textsize_m"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:textColorHint="#8D8A85"
+            android:layout_weight="0.20" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#807D78"
+        android:layout_marginLeft="@dimen/dimen_50_dp"
+        android:layout_marginRight="@dimen/dimen_50_dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_50_dp"
+        android:layout_marginRight="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_30_dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_30_dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c23_psd"/>
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:hint="请输入您的密码"
+            android:textSize="@dimen/textsize_m"
+            android:inputType="textPassword"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:textColorHint="#8D8A85"
+            android:layout_weight="0.20" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#807D78"
+        android:layout_marginLeft="@dimen/dimen_50_dp"
+        android:layout_marginRight="@dimen/dimen_50_dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_50_dp"
+        android:layout_marginRight="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_30_dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_30_dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c23_yanzheng"/>
+
+        <EditText
+            android:id="@+id/register_yanzheng"
+            android:maxLines="1"
+            android:maxLength="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:hint="请输入验证码"
+            android:textSize="@dimen/textsize_m"
+            android:inputType="phone"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:textColorHint="#8D8A85"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/register_getyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:background="#4C4C4A"
+            android:paddingTop="@dimen/dimen_5_dp"
+            android:paddingBottom="@dimen/dimen_5_dp"
+            android:paddingLeft="@dimen/dimen_10_dp"
+            android:paddingRight="@dimen/dimen_10_dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#807D78"
+        android:layout_marginLeft="@dimen/dimen_50_dp"
+        android:layout_marginRight="@dimen/dimen_50_dp"/>
+
+
+    <TextView
+        android:id="@+id/register_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg"
+        android:text="注册"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/dimen_20_dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c23_duigou"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_4_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="我已阅读并同意 用户注册协议"/>
+    </LinearLayout>
+
+
+</LinearLayout>

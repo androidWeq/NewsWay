@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65_dp"
+        android:background="@drawable/inquire_top"
+        android:paddingBottom="@dimen/dimen_8_dp"
+        android:paddingLeft="@dimen/dimen_20_dp"
+        android:paddingRight="@dimen/dimen_20_dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/left_arrow" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/weather_chajian" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100_dp"
+        android:background="@drawable/subway_bg">
+        
+        <TextView
+            android:id="@+id/city_subway_bigCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎您乘坐北京地铁"
+            android:textSize="@dimen/textsize_xxxl"
+            android:textColor="@color/sienna"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_40_dp"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_subway_changCity"
+            android:textSize="@dimen/textsize_xs"
+            android:text="更换城市"
+            android:textColor="@color/orange"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_below="@id/city_subway_bigCityName"/>
+
+        <TextView
+            android:id="@+id/city_subway_smallCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textSize="@dimen/textsize_xxxl"
+            android:textColor="@color/orange"
+            android:layout_toLeftOf="@id/city_subway_changCity"
+            android:layout_alignBottom="@id/city_subway_changCity"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+
+            />
+
+    </RelativeLayout>
+    
+    <ListView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:id="@+id/city_subway_listview"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

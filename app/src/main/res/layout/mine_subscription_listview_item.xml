@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dimen_10_dp"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/mine_subscription_listview_item_img"
+        android:layout_width="@dimen/dimen_90_dp"
+        android:background="@color/goldenrod"
+        android:layout_height="@dimen/dimen_60_dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_height="@dimen/dimen_60_dp">
+        <TextView
+            android:id="@+id/mine_subscription_listview_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地铁咨询"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_m"
+            />
+        <TextView
+            android:id="@+id/mine_subscription_listview_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4521699阅读"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/textsize_xs"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mine_subscription_listview_item_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/textsize_xs"
+        android:text="取消订阅"/>
+@
+</LinearLayout>

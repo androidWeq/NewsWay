@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/integral_center_listview_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日常任务"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:layout_marginBottom="@dimen/dimen_5_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_xxxl"/>
+    
+    <View
+        android:id="@+id/integral_center_listview_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dimen_10_dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dimen_5_dp"
+        android:paddingBottom="@dimen/dimen_5_dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/integral_center_listview_item_img"
+            android:layout_marginLeft="@dimen/dimen_15_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/open_xiao"/>
+
+        <TextView
+            android:id="@+id/integral_center_listview_item_title"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/darkgray"
+            android:text="打开小明地铁"/>
+
+        <TextView
+            android:id="@+id/integral_center_listview_item_schedule"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/darkgray"
+            android:layout_height="wrap_content"
+            android:text="(1/1)"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_20_dp">
+            <TextView
+                android:id="@+id/integral_center_listview_item_reward"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 0"
+                android:drawablePadding="@dimen/dimen_5_dp"
+                android:textColor="@color/mediumseagreen"
+                android:drawableRight="@drawable/coins"/>
+
+            <TextView
+                android:id="@+id/integral_center_listview_item_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完 成"
+                android:visibility="gone"
+                android:textColor="@color/mediumseagreen"
+                android:background="@drawable/text_shape"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

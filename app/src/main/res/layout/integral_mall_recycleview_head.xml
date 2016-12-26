@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/integral_mall_top"
+        android:background="@drawable/integral_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分兑换"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/left_arrow"
+            android:drawablePadding="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:textSize="@dimen/textsize_xl"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="92 积分"
+                android:drawablePadding="@dimen/dimen_10_dp"
+                android:layout_marginRight="@dimen/dimen_20_dp"
+                android:gravity="center_horizontal"
+                android:drawableLeft="@drawable/layer11"/>
+            <TextView
+                android:id="@+id/integral_mall_head_toexchangeRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换记录"
+                android:layout_marginLeft="@dimen/dimen_20_dp"
+                android:drawablePadding="@dimen/dimen_5_dp"
+                android:drawableRight="@drawable/a6j"
+                android:drawableLeft="@drawable/shape11"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/integral_mall_top">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xian_top"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xian_botom"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="抽奖活动"
+                android:drawablePadding="@dimen/dimen_2_dp"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/b20_1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="兑换记录"
+                android:drawablePadding="@dimen/dimen_2_dp"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/b20_2"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="所有商品"
+                android:drawablePadding="@dimen/dimen_2_dp"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/b20_3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="肖明福利"
+                android:drawablePadding="@dimen/dimen_2_dp"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/b20_4"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/integral_mall_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginTop="@dimen/dimen_100_dp"
+        app:image_scale_type="fit_xy"
+        android:background="@drawable/text_shape">
+
+    </com.youth.banner.Banner>
+</RelativeLayout>

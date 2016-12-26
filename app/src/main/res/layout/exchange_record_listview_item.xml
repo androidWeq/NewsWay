@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_70_dp">
+
+    <TextView
+        android:id="@+id/exchange_record_item_duiwan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兑完"
+        android:padding="@dimen/dimen_5_dp"
+        android:textColor="@color/white"
+        android:background="@color/grey_font_d"
+        android:textSize="@dimen/textsize_s"/>
+
+    <ImageView
+        android:id="@+id/exchange_record_item_img"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/dimen_60_dp"
+        android:layout_height="@dimen/dimen_60_dp"
+        android:background="@color/darksalmon"/>
+    
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:layout_marginBottom="@dimen/dimen_5_dp"
+        android:layout_height="@dimen/dimen_60_dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/exchange_record_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="神奇动物在哪里"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_l"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/exchange_record_item_jifen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.8万积分"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:textColor="@color/mediumturquoise"
+            android:maxLines="1"
+            android:textSize="@dimen/textsize_s"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/exchange_record_item_checkbox"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/checkbox_selector"
+        android:textColor="@color/checkboxcolor_white_green"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:text="兑换"/>
+
+</LinearLayout>

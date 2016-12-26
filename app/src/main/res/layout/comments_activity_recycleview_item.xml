@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dimen_10_dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/comments_activity_recycleview_item_img"
+            android:layout_width="@dimen/dimen_30_dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_height="@dimen/dimen_30_dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浮光掠影"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_l"
+                android:id="@+id/comments_activity_recycleview_item_username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2分钟前"
+                android:layout_marginTop="@dimen/dimen_2_dp"
+                android:layout_marginBottom="@dimen/dimen_2_dp"
+                android:textSize="@dimen/textsize_s"
+                android:id="@+id/comments_activity_recycleview_item_time"/>
+            <TextView
+                android:id="@+id/comments_activity_recycleview_item_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_m"
+                android:text="的范德萨范德萨范德萨范德萨发四大发"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/comments_activity_recycleview_item_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0赞"
+            android:button="@null"
+            android:maxLines="3"
+            android:textColor="@color/gray"
+            android:drawableLeft="@drawable/yc"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

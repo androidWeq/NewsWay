@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/dimen_5_dp"
+    android:paddingBottom="@dimen/dimen_5_dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/subscription_recycleview_item_img"
+        android:layout_width="@dimen/dimen_90_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/subscription_recycleview_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地铁咨询"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_xxl"/>
+        <TextView
+            android:id="@+id/subscription_recycleview_item_digest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/darkgray"
+            android:text="或将在年内开工 2020年建成一期"
+            android:textSize="@dimen/textsize_m"/>
+        <TextView
+            android:id="@+id/subscription_recycleview_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/darkgray"
+            android:text="4521699 订阅"
+            android:textSize="@dimen/textsize_m"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/subscription_recycleview_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:paddingTop="@dimen/dimen_5_dp"
+        android:paddingBottom="@dimen/dimen_5_dp"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:paddingRight="@dimen/dimen_10_dp"
+        android:background="@drawable/check_dingyue_gb"
+        android:layout_marginRight="@dimen/dimen_10_dp"
+        android:text="订阅"/>
+
+</LinearLayout>

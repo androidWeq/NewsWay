@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:gravity="center_vertical"
+        android:background="@color/style_red">
+
+        <ImageView
+            android:id="@+id/mine_subscription_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:src="@drawable/left_arrow"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订阅"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_xl"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mine_subscription_listview"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</LinearLayout>

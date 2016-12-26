@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_200_dp"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10_dp"
+    android:layout_marginRight="@dimen/dimen_5_dp"
+    android:layout_marginLeft="@dimen/dimen_5_dp"
+    android:background="@drawable/duihuan_bg">
+
+
+    <ImageView
+        android:id="@+id/integral_mall_recycleview_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/b20"/>
+    
+    <TextView
+        android:id="@+id/integral_mall_recycleview_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="权志龙签名选集"
+        android:layout_marginTop="@dimen/dimen_3_dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_l"/>
+
+    <TextView
+        android:id="@+id/integral_mall_recycleview_item_jifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6000积分"
+        android:layout_marginTop="@dimen/dimen_3_dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/mediumturquoise"
+        android:textSize="@dimen/textsize_s"/>
+
+
+
+</LinearLayout>

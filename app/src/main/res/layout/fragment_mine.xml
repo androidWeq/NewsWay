@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_250_dp"
+        android:background="@drawable/mine_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60_dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/mine_integralCenter"
+                android:layout_height="@dimen/dimen_60_dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/mine_integralMall"
+                android:layout_height="@dimen/dimen_60_dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/mine_integralSignIn"
+                android:layout_height="@dimen/dimen_60_dp" />
+            <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+                android:id="@+id/mine_integralSetting"
+            android:layout_height="@dimen/dimen_60_dp" />
+        </LinearLayout>
+
+        <com.youjia.newsway.review.RoundedImageView
+            android:layout_width="@dimen/dimen_50_dp"
+            android:layout_height="@dimen/dimen_50_dp"
+            android:id="@+id/mine_toUserInfo"
+            android:maxHeight="@dimen/dimen_50_dp"
+            android:maxWidth="@dimen/dimen_50_dp"
+            android:src="@drawable/userimg"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/mine_listview">
+
+    </ListView>
+
+
+
+
+</LinearLayout>

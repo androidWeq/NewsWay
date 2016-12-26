@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="@dimen/dimen_40_dp">
+
+    <ImageView
+        android:id="@+id/city_subway_listview_item_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/dimen_30_dp"
+        android:background="@color/mediumvioletred"/>
+
+    <TextView
+        android:id="@+id/city_subway_listview_item_lineNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1号线"
+        android:textSize="@dimen/textsize_xxl"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/city_subway_listview_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(苹果园-四惠东)"
+        android:textSize="@dimen/textsize_xxl"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+package com.youjia.newsway.application;
+
+
+import android.app.Application;
+
+import com.youjia.newsway.db.SQLHelper;
+
+import cn.smssdk.SMSSDK;
+
+public class AppApplication extends Application {
+	private static AppApplication mAppApplication;
+	private SQLHelper sqlHelper;
+	String username;
+	boolean addressIsDefault=true;//判断用户是不是没有收货地址而要重新添加,true代表没有,false代表有
+	int newspage=0;//当前资讯页面viewpager的当前页码，动态加载新闻列表
+	
+	@Override
+	public void onCreate() {
+		// TODO Auto-generated method stub
+		super.onCreate();
+		mAppApplication =this;
+
+		//界面ui显示第三方
+        com.wanjian.sak.LayoutManager.init((Application) getApplicationContext());
+
+		//ShareSdk短信注册
+		SMSSDK.initSDK(this, "1a29617f6f8dc", "d462fcb0e5319182a2495a3f053e7bd5");
+
+	}
+
+	/** 获取Application */
+	public static AppApplication getApp() {
+		/*if(mAppApplication==null){
+			mAppApplication=new AppApplication();
+		}*/
+		return mAppApplication;
+	}
+	
+	/** 获取数据库Helper */
+	public SQLHelper getSQLHelper() {
+		if (sqlHelper == null)
+			sqlHelper = new SQLHelper(mAppApplication);
+		return sqlHelper;
+	}
+	
+	/** 摧毁应用进程时候调用 */
+	public void onTerminate() {
+		if (sqlHelper != null)
+			sqlHelper.close();
+		super.onTerminate();
+	}
+	
+	
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+		
+	}
+	
+	public int getNewspage() {
+		return newspage;
+	}
+
+	public void setNewspage(int newspage) {
+		this.newspage = newspage;
+	}
+
+
+	public void clearAppCache() {
+	}
+
+	public boolean isAddressIsDefault() {
+		return addressIsDefault;
+	}
+
+	public void setAddressIsDefault(boolean addressIsDefault) {
+		this.addressIsDefault = addressIsDefault;
+	}
+	
+	
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:image_scale_type="fit_xy"
+        />
+
+    <com.zcw.togglebutton.ToggleButton
+        android:id="@+id/btn"
+        android:layout_width="54dp"
+        toggle:tbOnColor="@color/mediumaquamarine"
+        toggle:tbOffColor="@color/white"
+        toggle:tbSpotColor="@color/white"
+
+        android:layout_height="30dp" >
+    </com.zcw.togglebutton.ToggleButton>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/inquire_top"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/integral_top"
+        android:paddingTop="@dimen/dimen_20_dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/exchange_detail_back"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/exchange_detail_title"
+            android:layout_marginTop="@dimen/dimen_1_dp"
+            android:layout_marginLeft="@dimen/dimen_11_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="权志龙签名选集"
+            android:textSize="@dimen/textsize_xl"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/exchange_detail_listview"
+        android:layout_marginTop="@dimen/dimen_100_dp"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_marginRight="@dimen/dimen_10_dp"
+        android:dividerHeight="@dimen/dimen_5_dp"
+        android:divider="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/dimen_40_dp"
+        android:paddingTop="@dimen/dimen_3_dp"
+        android:paddingBottom="@dimen/dimen_3_dp"
+        android:paddingLeft="@dimen/dimen_15_dp"
+        android:paddingRight="@dimen/dimen_15_dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="马上兑换"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_l"
+            android:background="@color/seagreen"/>
+    </LinearLayout>
+
+</RelativeLayout>
